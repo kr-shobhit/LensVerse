@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1d1d1d;
+}
+
+.navbar_main {
+    height: 50px;
+    border-bottom: #FFC835 1px solid;
+    background: rgba(47, 47, 47, 0.255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.138);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_main img {
+    height: 35px;
+    margin-left: 20px;
+}
+
+.navbar_main img:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+.navbar_main .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+.links h4 {
+    color: white;
+    font-weight: 100;
+}
+
+.links h4:hover {
+    font-weight: 600;
+    border-bottom: 1px solid snow;
+}
+
+.navbar_main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .content {
+    height: calc(100vh - 50px);
+    display: flex;
+    padding: 5px;
+    border: 1px springgreen solid;
+} */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0px;
+    gap: 12px 0px;
+}
+
+.picbox {
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(174, 174, 174, 0.208); 
+}
+
+.picbox img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 
+.picbox img{
+    filter: grayscale(100%);
+}
+
+.picbox img:hover{
+    filter: grayscale(0%);
+} */
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    display: none;
+}
+
+.view-more-btn {
+    padding: 5px 20px;
+    margin: 0 5px;
+    background-color: #FFC835;
+    font-weight: 550;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    color: #FFC835;
+    background-color: #1d1d1d;
+    
+}
+
+
